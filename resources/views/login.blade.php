@@ -4,10 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
+    <title>Login Page</title>
     <style>
         /* Reset default margin and padding */
         * {
@@ -40,6 +37,7 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
+            color: #333; /* Darker text color */
         }
 
         /* Input styles */
@@ -62,8 +60,8 @@
         button {
             width: 100%;
             padding: 10px;
-            background-color: #007bff;
-            color: #fff;
+            background-color: #28a745; /* Green button background */
+            color: #fff; /* White text color */
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -71,13 +69,16 @@
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #218838; /* Darker shade on hover */
         }
 
         button:active {
-            background-color: #004cae;
+            background-color: #1e7e34; /* Even darker shade when active */
         }
     </style>
+</head>
+
+<body>
     <h1>Login Page</h1>
     <form action="{{route('login')}}" method="post">
         @csrf
@@ -87,7 +88,7 @@
         </div>
         <div>
             <label for="password">Password</label>
-            <input type="text" name="password" id="password">
+            <input type="password" name="password" id="password">
         </div>
         <button type="submit">Login</button>
     </form>

@@ -48,11 +48,24 @@
             background-color: #f1f1f1;
             padding: 10px;
             margin-bottom: 10px;
-            border-radius: 4px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .comment-item:last-child {
             margin-bottom: 0;
+        }
+
+        .comment-item p {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .comment-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-top: 10px;
         }
 
         .comment-form {
@@ -78,8 +91,8 @@
 
         .comment-form button {
             padding: 10px;
-            background-color: #007bff;
-            color: #fff;
+            background-color: #28a745; /* Green button background */
+            color: #fff; /* White text color */
             border: none;
             border-radius: 4px;
             font-size: 16px;
@@ -88,7 +101,7 @@
         }
 
         .comment-form button:hover {
-            background-color: #0056b3;
+            background-color: #218838; /* Darker shade on hover */
         }
     </style>
 </head>
@@ -101,7 +114,7 @@
             <li class="comment-item">
                 <p>{{ $comment->content }}</p>
                 @if ($comment->photo)
-                <img src="{{ asset('storage/' . $comment->photo) }}" alt="Comment Photo" style="max-width: 100%; height: auto;">
+                <img src="{{ asset('storage/' . $comment->photo) }}" alt="Comment Photo">
                 @endif
             </li>
         </ul>

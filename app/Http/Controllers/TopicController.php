@@ -33,6 +33,7 @@ class TopicController extends Controller
     }
     public function findTopics(Request $req) {
         $topics = topics::where('type', $req->type);
+        $topics = $topics->get();
         return view('searching', compact('topics'));
     }
     public function topic($id) {

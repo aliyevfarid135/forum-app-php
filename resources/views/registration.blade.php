@@ -37,7 +37,7 @@
         }
 
         input[type="submit"] {
-            background-color: #4CAF50;
+            background-color: #4CAF50; /* Yeşil renk */
             color: white;
             padding: 10px 20px;
             border: none;
@@ -46,7 +46,7 @@
         }
 
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #45a049; /* Koyu yeşil hover */
         }
     </style>
 </head>

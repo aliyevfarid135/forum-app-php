@@ -33,11 +33,13 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
+            color: #333;
         }
 
         label {
             display: block;
             margin-bottom: 8px;
+            color: #333;
         }
 
         input[type="text"],
@@ -53,8 +55,8 @@
         button {
             width: 100%;
             padding: 10px;
-            background-color: #007bff;
-            color: #fff;
+            background-color: #28a745; /* Green button background */
+            color: #fff; /* White text color */
             border: none;
             border-radius: 4px;
             font-size: 16px;
@@ -62,7 +64,7 @@
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #218838; /* Darker shade on hover */
         }
     </style>
 </head>

@@ -15,6 +15,6 @@ Route::get('/login', [LoginController::class, 'get']);
 Route::get('/topics', [TopicController::class, 'getAllTopics'])->name('topics');
 Route::get('/topics/{id}', [TopicController::class, 'topic'])->name('topic');
 Route::get('/exit', [LoginController::class, 'log_out']);
-Route::get('/search', [TopicController::class, 'search']);
+Route::get('/search', [TopicController::class, 'search'])->name('src-get');
 Route::post('/search/submit', [TopicController::class, 'findTopics'])->name('search');
 

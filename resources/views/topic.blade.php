@@ -36,7 +36,7 @@
         }
 
         li {
-            background-color: #fff;
+            background-color: #28a745; /* Green background */
             margin-bottom: 10px;
             padding: 15px;
             border-radius: 8px;
@@ -44,15 +44,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            transition: transform 0.2s ease; /* Smooth hover effect */
+        }
+
+        li:hover {
+            transform: translateY(-5px); /* Lift up effect on hover */
         }
 
         li:nth-child(even) {
-            background-color: #f1f1f1;
+            background-color: #218838; /* Darker shade for even rows */
         }
 
         a {
             text-decoration: none;
-            color: #007bff;
+            color: #fff; /* White text */
             font-weight: bold;
         }
 
@@ -62,7 +67,25 @@
 
         .topic-type {
             font-style: italic;
-            color: #555;
+            color: #f9f9f9; /* Lighter text color */
+            margin-right: 10px;
+        }
+
+        .navigation {
+            margin-top: 20px;
+        }
+
+        .navigation a {
+            margin-right: 15px;
+            padding: 10px 15px;
+            background-color: #28a745; /* Green color for buttons */
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            background-color: #218838; /* Darker shade on hover */
         }
     </style>
 </head>
@@ -72,11 +95,19 @@
     <ul>
         @foreach($topics as $topic)
             <li>
-                <a href="{{ route('topic', $topic->id)}}">{{ $topic->title }}</a>
-                <span class="topic-type">{{ $topic->type }}</span>
+                <div>
+                    <a href="{{ route('topic', ['id' => $topic->id]) }}">{{ $topic->title }}</a>
+                    <span class="topic-type">{{ $topic->type }}</span>
+                </div>
+                <a href="{{ route('topic', ['id' => $topic->id]) }}">Comment</a>
             </li>
         @endforeach
     </ul>
+
+    <div class="navigation">
+        <a href="{{ route('create') }}">Create Topic</a>
+        <a href="{{ route('src-get') }}">Search</a>
+    </div>
 </body>
 
 </html>
