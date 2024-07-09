@@ -12,7 +12,7 @@ class LoginController extends Controller
     }
     public function login(Request $req) {
         if(Auth::attempt(['email'=>$req->email, 'password'=>$req->password])){
-            return redirect()->route('create');
+            return redirect()->route('topics');
         }
         return redirect('/login');
     }

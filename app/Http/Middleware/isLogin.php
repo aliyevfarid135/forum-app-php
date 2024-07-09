@@ -16,7 +16,7 @@ class isLogin
      */
     public function handle(Request $request, Closure $next)
     {
-        if(!auth()->check()) {
+        if(auth()->check()) {
             return redirect('/topics');
         }
         return $next($request);

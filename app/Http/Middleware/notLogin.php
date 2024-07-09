@@ -16,9 +16,9 @@ class notLogin
      */
     public function handle(Request $request, Closure $next)
     {
-        if(!auth()->check()) {
-            return redirect('/login');
+        if(auth()->check()) {
+            return $next($request);
         }
-        return $next($request);
+        return redirect('/login');
     }
 }

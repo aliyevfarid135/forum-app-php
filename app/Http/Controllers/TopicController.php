@@ -28,7 +28,6 @@ class TopicController extends Controller
 
     public function search() {
         $topics = topics::all();
-
         return view('searching', compact('topics'));
     }
     public function findTopics(Request $req) {
