@@ -55,8 +55,8 @@
         button {
             width: 100%;
             padding: 10px;
-            background-color: #28a745; /* Green button background */
-            color: #fff; /* White text color */
+            background-color: #28a745;
+            color: #fff;
             border: none;
             border-radius: 4px;
             font-size: 16px;
@@ -64,7 +64,7 @@
         }
 
         button:hover {
-            background-color: #218838; /* Darker shade on hover */
+            background-color: #218838;
         }
     </style>
 </head>
