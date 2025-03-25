@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
-        /* Reset default margin and padding */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Body styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -24,7 +22,6 @@
             margin: 0;
         }
 
-        /* Container styles */
         form {
             background-color: #fff;
             padding: 20px;
@@ -33,14 +30,12 @@
             width: 300px;
         }
 
-        /* Heading styles */
         h1 {
             text-align: center;
             margin-bottom: 20px;
             color: #333; /* Darker text color */
         }
 
-        /* Input styles */
         label {
             display: block;
             margin-bottom: 8px;
@@ -56,12 +51,11 @@
             font-size: 14px;
         }
 
-        /* Button styles */
         button {
             width: 100%;
             padding: 10px;
-            background-color: #28a745; /* Green button background */
-            color: #fff; /* White text color */
+            background-color: #28a745;
+            color: #fff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -69,11 +63,11 @@
         }
 
         button:hover {
-            background-color: #218838; /* Darker shade on hover */
+            background-color: #218838;
         }
 
         button:active {
-            background-color: #1e7e34; /* Even darker shade when active */
+            background-color: #1e7e34;
         }
     </style>
 </head>
