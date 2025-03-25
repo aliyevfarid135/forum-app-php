@@ -36,7 +36,7 @@
         }
 
         li {
-            background-color: #28a745; /* Green background */
+            background-color: #28a745;
             margin-bottom: 10px;
             padding: 15px;
             border-radius: 8px;
@@ -44,15 +44,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: transform 0.2s ease; /* Smooth hover effect */
+            transition: transform 0.2s ease;
         }
 
         li:hover {
-            transform: translateY(-5px); /* Lift up effect on hover */
+            transform: translateY(-5px);
         }
 
         li:nth-child(even) {
-            background-color: #218838; /* Darker shade for even rows */
+            background-color: #218838;
         }
 
         a {
@@ -67,7 +67,7 @@
 
         .topic-type {
             font-style: italic;
-            color: #f9f9f9; /* Lighter text color */
+            color: #f9f9f9;
             margin-right: 10px;
         }
 
@@ -78,14 +78,14 @@
         .navigation a {
             margin-right: 15px;
             padding: 10px 15px;
-            background-color: #28a745; /* Green color for buttons */
+            background-color: #28a745;
             color: #fff;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
         .navigation a:hover {
-            background-color: #218838; /* Darker shade on hover */
+            background-color: #218838;
         }
     </style>
 </head>
