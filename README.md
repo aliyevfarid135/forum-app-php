@@ -10,17 +10,9 @@ A simple forum application built with PHP, following the MVC (Model-View-Control
 - **MVC Structure**: The application follows the Model-View-Controller pattern for better code organization.
 - **Database Integration**: Uses MySQL for storing user data, topics, and comments.
 
-## Technologies Used
-
-- **PHP**: The core programming language used for server-side logic.
-- **MySQL**: Database management system for storing application data.
-- **HTML/CSS**: For structuring and styling the front-end.
-- **Bootstrap**: Front-end framework for responsive design.
-- **Composer**: Dependency management for PHP.
-
 ## Installation
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/faridaliyevcs/forum-app-php.git
+   git clone https://github.com/aliyevfarid135/forum-app-php.git
    cd forum-app-php
