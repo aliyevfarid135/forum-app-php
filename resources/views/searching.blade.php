@@ -38,14 +38,14 @@
         }
         
         input[type="submit"] {
-            background-color: #28a745; /* Yeşil renk */
+            background-color: #28a745; 
             color: white;
             cursor: pointer;
             border: none;
         }
         
         input[type="submit"]:hover {
-            background-color: #218838; /* Koyu yeşil hover */
+            background-color: #218838;
         }
         
         ul {
@@ -69,13 +69,13 @@
         
         a {
             text-decoration: none;
-            color: #28a745; /* Yeşil renk */
+            color: #28a745;
             font-weight: bold;
         }
         
         a:hover {
             text-decoration: underline;
-            color: #218838; /* Koyu yeşil hover */
+            color: #218838;
         }
         .navigation {
             margin-top: 20px;
@@ -84,14 +84,14 @@
         .navigation a {
             margin-right: 15px;
             padding: 10px 15px;
-            background-color: #28a745; /* Green color for buttons */
+            background-color: #28a745;
             color: #fff;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
         .navigation a:hover {
-            background-color: #218838; /* Darker shade on hover */
+            background-color: #218838;
         }
     </style>
 </head>
