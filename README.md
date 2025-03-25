@@ -10,7 +10,7 @@ A simple forum application built with PHP, following the MVC (Model-View-Control
 - **MVC Structure**: The application follows the Model-View-Controller pattern for better code organization.
 - **Database Integration**: Uses MySQL for storing user data, topics, and comments.
 
-## Installation
+## Getting Started
 
 **Clone the Repository**:
    ```bash
