@@ -1,4 +1,4 @@
-# Forum App - PHP
+# Forum Application
 
 A simple forum application built with PHP, following the MVC (Model-View-Controller) architecture. This project allows users to create topics, post comments, and interact with each other in a forum-like environment.
 
