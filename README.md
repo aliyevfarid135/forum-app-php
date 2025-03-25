@@ -12,7 +12,6 @@ A simple forum application built with PHP, following the MVC (Model-View-Control
 
 ## Installation
 
-1. **Clone the Repository**:
+**Clone the Repository**:
    ```bash
    git clone https://github.com/aliyevfarid135/forum-app-php.git
-   cd forum-app-php
